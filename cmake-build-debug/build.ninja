@@ -55,6 +55,12 @@ build CMakeFiles/GitTest.dir/main.cpp.obj: CXX_COMPILER__GitTest_unscanned_Debug
   OBJECT_DIR = CMakeFiles\GitTest.dir
   OBJECT_FILE_DIR = CMakeFiles\GitTest.dir
 
+build CMakeFiles/GitTest.dir/new.cpp.obj: CXX_COMPILER__GitTest_unscanned_Debug F$:/GitTest/new.cpp || cmake_object_order_depends_target_GitTest
+  DEP_FILE = CMakeFiles\GitTest.dir\new.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\GitTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\GitTest.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target GitTest
@@ -63,7 +69,7 @@ build CMakeFiles/GitTest.dir/main.cpp.obj: CXX_COMPILER__GitTest_unscanned_Debug
 #############################################
 # Link the executable GitTest.exe
 
-build GitTest.exe: CXX_EXECUTABLE_LINKER__GitTest_Debug CMakeFiles/GitTest.dir/main.cpp.obj
+build GitTest.exe: CXX_EXECUTABLE_LINKER__GitTest_Debug CMakeFiles/GitTest.dir/main.cpp.obj CMakeFiles/GitTest.dir/new.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\GitTest.dir
