@@ -3,4 +3,5 @@ project(GitTest)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(GitTest main.cpp)
+add_executable(GitTest main.cpp
+        readme.md)
